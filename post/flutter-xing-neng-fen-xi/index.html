@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://zrwander.github.io/favicon.ico?v=1616315597540">
+<link rel="shortcut icon" href="https://zrwander.github.io/favicon.ico?v=1616321269556">
 <link rel="stylesheet" href="https://zrwander.github.io/styles/main.css">
 
 
@@ -18,9 +18,12 @@
 
 
 
-    <meta name="description" content="🌗Flutter系列 - Flutter 性能分析工具 &amp; 方式
+    <meta name="description" content="🌗 Flutter系列 - Flutter 性能分析工具 &amp; 方式
 
-" />
+Flutter 性能分析工具 &amp; 方式
+术语（Terminology）
+Tracing
+Tracing 是记录你应用程序执行的操作的想法，计算每次需要花..." />
     <meta name="keywords" content="Flutter,性能分析" />
   </head>
   <body>
@@ -30,7 +33,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://zrwander.github.io">
-        <img src="https://zrwander.github.io/images/avatar.png?v=1616315597540" class="site-logo">
+        <img src="https://zrwander.github.io/images/avatar.png?v=1616321269556" class="site-logo">
         <h1 class="site-title">Wander Poet</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -99,8 +102,40 @@
               </div>
             
             <div class="post-content" v-pre>
-              <p>🌗Flutter系列 - Flutter 性能分析工具 &amp; 方式</p>
+              <p>🌗 Flutter系列 - Flutter 性能分析工具 &amp; 方式</p>
 <!-- more -->
+<h1 id="flutter-性能分析工具-方式">Flutter 性能分析工具 &amp; 方式</h1>
+<h2 id="术语terminology">术语（Terminology）</h2>
+<p><code>Tracing</code><br>
+Tracing 是记录你应用程序执行的操作的想法，计算每次需要花费多少时间。<br>
+代码上的表象如下：</p>
+<pre><code class="language-dart">void myComputation() {
+    Timeline.startSync('myComputation'); 
+    // ... actual work ...
+    Timeline.finishSync(); 
+}
+</code></pre>
+<!-- more -->
+<p><code>Flame chart</code><br>
+Flame chart 基本上是按照事件的时间表进行的，跟踪事件。</p>
+<p><code>Trade-off</code><br>
+Trade off 权衡，尤其是在性能方面，这一点非常重要。权衡基本上是一种折衷。当你有两件事需要权衡时，在性能方面 一方面通常是：我希望我的应用十分顺畅，另一方面我不希望它们表现不佳，或使用程序消耗过多的电池和资源。几乎从来没有一个简单的解决方案，你必须妥协。<br>
+另一种经典的折衷方案是CPU与内存。因此你积极的缓存，那么你可能会节省一些CPU周期，但另一方面你将需要更多的内存，所以这是个权衡。</p>
+<h2 id="工具-基础-tools-basics">工具 &amp; 基础 （Tools &amp; Basics）</h2>
+<h3 id="调试方式">调试方式</h3>
+<p>切勿在调试模式下进行性能分析，默认情况下，调试模式比生产模式慢的多，其次切勿在模拟器中进行。<br>
+因此如果你要进行性能分析，请在配置文件模式下进行，并在真实设备上进行操作。</p>
+<h3 id="避免在ui线程中工作avoid-work-in-the-ui-thread">避免在UI线程中工作（Avoid work in the ui thread）</h3>
+<p>你无法完全避免在UI线程中工作，  因为那样就没有应用了。</p>
+<h3 id="尽量减少昂贵部件的使用minimize-use-of-expensive-widgets">尽量减少昂贵部件的使用（Minimize use of expensive widgets）</h3>
+<p>不要重建你不想要的小部件，还因减少使用昂贵的小部件。</p>
+<h3 id="performance-overlay">Performance Overlay</h3>
+<h3 id="dart-devtools">Dart DevTools</h3>
+<h3 id="observatory">Observatory</h3>
+<h3 id="high-speed-camera">High-speed camera</h3>
+<h2 id="现场分析live-profiling">现场分析（Live Profiling）</h2>
+<h3 id="以配置文件模式运行">以配置文件模式运行</h3>
+<p>flutter run --profile (--trace-skia ：它可以为你提供关于更多信息)</p>
 
             </div>
             
