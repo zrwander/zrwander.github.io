@@ -1,0 +1,120 @@
+[debug] [2021-07-30T16:11:38.356Z] ----------------------------------------------------------------------
+[debug] [2021-07-30T16:11:38.358Z] Command:       /usr/local/bin/firebase /Users/zrw/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-07-30T16:11:38.358Z] CLI Version:   9.16.0
+[debug] [2021-07-30T16:11:38.358Z] Platform:      darwin
+[debug] [2021-07-30T16:11:38.358Z] Node Version:  v12.18.1
+[debug] [2021-07-30T16:11:38.359Z] Time:          Sat Jul 31 2021 00:11:38 GMT+0800 (China Standard Time)
+[debug] [2021-07-30T16:11:38.359Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-30T16:11:38.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-30T16:11:38.363Z] > authorizing via signed-in user (zrwander@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/zrw/Documents/data/klook/code/klook-flutter-altron/altron_standard_card/example/build/web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-07-30T16:11:46.134Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-07-30T16:11:49.032Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-07-30T16:11:49.032Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project altronexample (AltronExample) 
+[info] 
+=== Hosting:github Setup
+[info] 
+[info] i  Detected a .git folder at /Users/zrw/Documents/data/klook/code/klook-flutter-altron 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=324839467&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-30T16:11:53.189Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"c75d41aca4103e00d625","redirect_uri":"http://localhost:9005","state":"324839467"}
+[debug] [2021-07-30T16:11:55.485Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 30 Jul 2021 16:11:55 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"108c5d81a832f100d41ef28b5f6dcea0\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"961D:18EB:17ABBE5:2153AC6:610424CB"}
+[debug] [2021-07-30T16:11:55.487Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-30T16:11:56.295Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-30T16:11:56.295Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"zrwander","id":8035191,"node_id":"MDQ6VXNlcjgwMzUxOTE=","avatar_url":"https://avatars.githubusercontent.com/u/8035191?v=4","gravatar_id":"","url":"https://api.github.com/users/zrwander","html_url":"https://github.com/zrwander","followers_url":"https://api.github.com/users/zrwander/followers","following_url":"https://api.github.com/users/zrwander/following{/other_user}","gists_url":"https://api.github.com/users/zrwander/gists{/gist_id}","starred_url":"https://api.github.com/users/zrwander/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/zrwander/subscriptions","organizations_url":"https://api.github.com/users/zrwander/orgs","repos_url":"https://api.github.com/users/zrwander/repos","events_url":"https://api.github.com/users/zrwander/events{/privacy}","received_events_url":"https://api.github.com/users/zrwander/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":14,"public_gists":0,"followers":0,"following":1,"created_at":"2014-07-01T08:48:50Z","updated_at":"2021-07-30T16:02:33Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":7212,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as zrwander 
+[info] 
+[debug] [2021-07-30T16:12:12.507Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:14.080Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:15.094Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:15.431Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:15.431Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:22.091Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:42.109Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:42.110Z] >>> [apiv2][query] GET https://api.github.com/repos///actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:43.563Z] >>> [apiv2][query] GET https://api.github.com/repos/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:44.308Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:44.679Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:44.895Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:45.084Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:45.258Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:45.764Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:46.870Z] <<< [apiv2][status] GET https://api.github.com/repos/zrwander/actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:46.871Z] <<< [apiv2][body] GET https://api.github.com/repos/zrwander/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:46.957Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:47.101Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:47.101Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:47.547Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:47.547Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:49.372Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:49.372Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:49.403Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:12:50.334Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:50.334Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:52.305Z] <<< [apiv2][status] GET https://api.github.com/repos///actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:52.306Z] <<< [apiv2][body] GET https://api.github.com/repos///actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:53.460Z] <<< [apiv2][status] GET https://api.github.com/repos/altron/actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:53.461Z] <<< [apiv2][body] GET https://api.github.com/repos/altron/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:54.358Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:54.358Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:12:57.118Z] <<< [apiv2][status] GET https://api.github.com/repos/zrwander/actions/secrets/public-key 404
+[debug] [2021-07-30T16:12:57.118Z] <<< [apiv2][body] GET https://api.github.com/repos/zrwander/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:13:07.497Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:08.084Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:08.369Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:08.665Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:09.065Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:11.277Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:11.868Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:12.812Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:17.779Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:13:17.779Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:13:18.032Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-07-30T16:13:18.032Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-07-30T16:13:24.311Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key type=owner
+[debug] [2021-07-30T16:13:25.077Z] <<< [apiv2][status] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key 200
+[debug] [2021-07-30T16:13:25.077Z] <<< [apiv2][body] GET https://api.github.com/repos/zrwander/altron/actions/secrets/public-key {"key_id":"568250167242549743","key":"tb+oFSjH2rRM7tM3xPO6CSVpo9FYkJMj9VI6njt7LyU="}
+[debug] [2021-07-30T16:13:25.078Z] >>> [apiv2][query] GET https://api.github.com/repos/zrwander/altron [none]
+[debug] [2021-07-30T16:13:31.010Z] <<< [apiv2][status] GET https://api.github.com/repos/zrwander/altron 200
+[debug] [2021-07-30T16:13:31.010Z] <<< [apiv2][body] GET https://api.github.com/repos/zrwander/altron {"id":388743392,"node_id":"MDEwOlJlcG9zaXRvcnkzODg3NDMzOTI=","name":"altron","full_name":"zrwander/altron","private":false,"owner":{"login":"zrwander","id":8035191,"node_id":"MDQ6VXNlcjgwMzUxOTE=","avatar_url":"https://avatars.githubusercontent.com/u/8035191?v=4","gravatar_id":"","url":"https://api.github.com/users/zrwander","html_url":"https://github.com/zrwander","followers_url":"https://api.github.com/users/zrwander/followers","following_url":"https://api.github.com/users/zrwander/following{/other_user}","gists_url":"https://api.github.com/users/zrwander/gists{/gist_id}","starred_url":"https://api.github.com/users/zrwander/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/zrwander/subscriptions","organizations_url":"https://api.github.com/users/zrwander/orgs","repos_url":"https://api.github.com/users/zrwander/repos","events_url":"https://api.github.com/users/zrwander/events{/privacy}","received_events_url":"https://api.github.com/users/zrwander/received_events","type":"User","site_admin":false},"html_url":"https://github.com/zrwander/altron","description":null,"fork":false,"url":"https://api.github.com/repos/zrwander/altron","forks_url":"https://api.github.com/repos/zrwander/altron/forks","keys_url":"https://api.github.com/repos/zrwander/altron/keys{/key_id}","collaborators_url":"https://api.github.com/repos/zrwander/altron/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/zrwander/altron/teams","hooks_url":"https://api.github.com/repos/zrwander/altron/hooks","issue_events_url":"https://api.github.com/repos/zrwander/altron/issues/events{/number}","events_url":"https://api.github.com/repos/zrwander/altron/events","assignees_url":"https://api.github.com/repos/zrwander/altron/assignees{/user}","branches_url":"https://api.github.com/repos/zrwander/altron/branches{/branch}","tags_url":"https://api.github.com/repos/zrwander/altron/tags","blobs_url":"https://api.github.com/repos/zrwander/altron/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/zrwander/altron/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/zrwander/altron/git/refs{/sha}","trees_url":"https://api.github.com/repos/zrwander/altron/git/trees{/sha}","statuses_url":"https://api.github.com/repos/zrwander/altron/statuses/{sha}","languages_url":"https://api.github.com/repos/zrwander/altron/languages","stargazers_url":"https://api.github.com/repos/zrwander/altron/stargazers","contributors_url":"https://api.github.com/repos/zrwander/altron/contributors","subscribers_url":"https://api.github.com/repos/zrwander/altron/subscribers","subscription_url":"https://api.github.com/repos/zrwander/altron/subscription","commits_url":"https://api.github.com/repos/zrwander/altron/commits{/sha}","git_commits_url":"https://api.github.com/repos/zrwander/altron/git/commits{/sha}","comments_url":"https://api.github.com/repos/zrwander/altron/comments{/number}","issue_comment_url":"https://api.github.com/repos/zrwander/altron/issues/comments{/number}","contents_url":"https://api.github.com/repos/zrwander/altron/contents/{+path}","compare_url":"https://api.github.com/repos/zrwander/altron/compare/{base}...{head}","merges_url":"https://api.github.com/repos/zrwander/altron/merges","archive_url":"https://api.github.com/repos/zrwander/altron/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/zrwander/altron/downloads","issues_url":"https://api.github.com/repos/zrwander/altron/issues{/number}","pulls_url":"https://api.github.com/repos/zrwander/altron/pulls{/number}","milestones_url":"https://api.github.com/repos/zrwander/altron/milestones{/number}","notifications_url":"https://api.github.com/repos/zrwander/altron/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/zrwander/altron/labels{/name}","releases_url":"https://api.github.com/repos/zrwander/altron/releases{/id}","deployments_url":"https://api.github.com/repos/zrwander/altron/deployments","created_at":"2021-07-23T09:11:47Z","updated_at":"2021-07-23T09:11:47Z","pushed_at":"2021-07-23T09:11:47Z","git_url":"git://github.com/zrwander/altron.git","ssh_url":"git@github.com:zrwander/altron.git","clone_url":"https://github.com/zrwander/altron.git","svn_url":"https://github.com/zrwander/altron","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"push":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"delete_branch_on_merge":false,"network_count":0,"subscribers_count":1}
+[debug] [2021-07-30T16:13:31.012Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-30T16:13:31.013Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-30T16:13:35.745Z] <<< HTTP RESPONSE 200 {"date":"Fri, 30 Jul 2021 16:13:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-30T16:13:35.808Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/altronexample/serviceAccounts  
+ {"accountId":"github-action-388743392","serviceAccount":{"displayName":"GitHub Actions (zrwander/altron)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository zrwander/altron"}}
+[debug] [2021-07-30T16:13:43.176Z] Error: Client network socket disconnected before secure TLS connection was established
+    at connResetException (internal/errors.js:609:14)
+    at TLSSocket.onConnectEnd (_tls_wrap.js:1547:19)
+    at Object.onceWrapper (events.js:421:28)
+    at TLSSocket.emit (events.js:327:22)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Server Error. Client network socket disconnected before secure TLS connection was established
