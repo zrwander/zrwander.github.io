@@ -48197,7 +48197,7 @@ $S:118}
 X.nz.prototype={}
 F.Bj.prototype={
 S:function(a,b){var s=X.R9(null,null,C.bC,C.fM,X.aEM())
-return new S.B_($.aLg(),"/",this.gakV(),"Altron Example - 1",s,null)},
+return new S.B_($.aLg(),"/",this.gakV(),"Altron Example - 2",s,null)},
 akW:function(a){var s,r=a.a
 if(r==null)r="/"
 if(C.b.C(r,"/altron/card_list"))return V.a9h(new F.aag(),null,t.z)
